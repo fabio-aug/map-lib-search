@@ -6,11 +6,8 @@ function Home() {
   const history = useHistory();
   return (
     <React.Fragment>
-      <Button
-        type='primary'
-        onClick={() => history((p) => p.goExemplo1).go()}
-      >
-        Exemplo 1
+      <Button type='primary' onClick={() => history((p) => p.goTrimbleMaps).go()}>
+        Trimble Maps
       </Button>
     </React.Fragment>
   );

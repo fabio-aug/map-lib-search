@@ -1,5 +1,7 @@
-import Template from './template/Template';
+import Review from './Review';
+import Template from './/Template';
 
 export {
+  Review,
   Template
 };

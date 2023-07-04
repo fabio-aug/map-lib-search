@@ -1,15 +1,17 @@
-import { useRoutes } from 'react-router-dom';
+import { useRoutes, Navigate } from 'react-router-dom';
 
 import Paths from '@/routes/Paths';
-import { Home, Exemplo1 } from '@/pages';
-import Template from '@/components/template/Template';
+import { Home, TrimbleMapsComponent } from '@/pages';
+import Template from '@/components/Template';
 
 function Routes() {
   const routes = [{
     element: <Template />,
     children: [
       { path: Paths.pHome, element: <Home /> },
-      { path: Paths.pExemplo1, element: <Exemplo1 />}
+      { path: Paths.pTrimbleMaps, element: <TrimbleMapsComponent />},
+      { path: '/', element: <Navigate to={Paths.pHome} />},
+      { path: '*', element: <Navigate to={Paths.pHome} />}
     ]
   }];
   return useRoutes(routes);

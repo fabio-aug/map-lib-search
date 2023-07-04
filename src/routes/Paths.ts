@@ -1,9 +1,9 @@
 class Paths {
   public pHome = '/home';
-  public goHome = () => '/home';
+  public goHome = () => this.pHome;
 
-  public pExemplo1 = '/exemplo1';
-  public goExemplo1 = () => '/exemplo1';
+  public pTrimbleMaps = '/TrimbleMaps';
+  public goTrimbleMaps = () => this.pTrimbleMaps;
 }
 
 export default new Paths();

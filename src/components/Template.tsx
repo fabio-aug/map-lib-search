@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from 'antd';
 import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
 import { Content, Header } from 'antd/es/layout/layout';
@@ -14,10 +13,8 @@ function Template() {
         Home
       </Header>
       <Layout>
-        <Content style={contentStyle}>
-          <Card style={cardStyle}>
-            <Outlet />
-          </Card>
+        <Content style={{ padding: 20 }}>
+          <Outlet />
         </Content>
       </Layout>
     </Layout>
@@ -31,14 +28,4 @@ const headerStyle: React.CSSProperties = {
   color: '#fff',
   backgroundColor: '#000000',
   cursor: 'pointer'
-};
-
-const contentStyle: React.CSSProperties = {
-  textAlign: 'center',
-  padding: 50,
-};
-
-
-const cardStyle: React.CSSProperties = {
-  height: '100%'
 };

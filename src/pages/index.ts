@@ -1,7 +1,7 @@
 import Home from './home/Home';
-import Exemplo1 from './exemplo1/Exemplo1';
+import TrimbleMapsComponent from './trimbleMaps/TrimbleMaps';
 
 export {
   Home,
-  Exemplo1
+  TrimbleMapsComponent
 };
