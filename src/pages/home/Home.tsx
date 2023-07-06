@@ -1,15 +1,17 @@
-import React from 'react';
-import { Button } from 'antd';
+import { Button, Space } from 'antd';
 import useHistory from '@/hooks/useHistory';
 
 function Home() {
   const history = useHistory();
   return (
-    <React.Fragment>
+    <Space direction='horizontal' size='middle'>
       <Button type='primary' onClick={() => history((p) => p.goTrimbleMaps).go()}>
         Trimble Maps
       </Button>
-    </React.Fragment>
+      <Button type='primary' onClick={() => history((p) => p.goDeckGl).go()}>
+        deck.gl
+      </Button>
+    </Space>
   );
 }
 

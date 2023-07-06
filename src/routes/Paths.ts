@@ -4,6 +4,9 @@ class Paths {
 
   public pTrimbleMaps = '/TrimbleMaps';
   public goTrimbleMaps = () => this.pTrimbleMaps;
+
+  public pDeckGl = '/DeckGl';
+  public goDeckGl = () => this.pDeckGl;
 }
 
 export default new Paths();

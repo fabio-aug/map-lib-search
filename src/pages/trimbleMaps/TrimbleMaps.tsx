@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Card } from 'antd';
 import * as THREE from 'three';
+import TrimbleMaps from '@trimblemaps/trimblemaps-js';
 import { ColladaLoader } from 'three/examples/jsm/loaders/ColladaLoader';
 
 import { Review } from '@/components';
 import Model from './file/building_04.dae';
-import TrimbleMaps from '@trimblemaps/trimblemaps-js';
 
 function TrimbleMapsComponent() {
   useEffect(() => {
@@ -27,12 +27,12 @@ function TrimbleMapsComponent() {
       id: '3d-model',
       type: 'custom',
       renderingMode: '3d',
-      onAdd: function (map, gl) {
+      onAdd: function (map: any, gl: any) {
         const scene = new THREE.Scene();
         // use the three.js Collada loader to add the 3D model to the three.js scene
         const loader = new ColladaLoader();
         // './data/space_needle.dae'
-        loader.load(Model, function (dae) {
+        loader.load(Model, function (dae: any) {
           scene.add(dae.scene);
         }.bind(this));
 
@@ -59,7 +59,7 @@ function TrimbleMapsComponent() {
         renderer.autoClear = false;
         this.renderer = renderer;
       },
-      render: function (gl, matrix) {
+      render: function (gl: any, matrix: any) {
         // parameters to ensure the model is georeferenced correctly on the map
         const modelAltitude = 0;
         const modelOrigin = [-122.34929, 47.6204];
