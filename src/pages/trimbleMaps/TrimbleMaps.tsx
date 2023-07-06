@@ -120,20 +120,20 @@ function TrimbleMapsComponent() {
     <React.Fragment>
       <Review
         topics={[
-          { title: 'Dificuldade de implementação', description: 'Baixa (Estrutura e sintaxe semelhante a do leaflet puro).' },
-          { title: 'Tempo estimado', description: 'Por volta de 2-3 meses.' },
-          { title: 'Preço', description: 'Aproximadamente $200 por mês (R$968,20).' },
-          { title: 'Robustez', description: 'Possui bastante funcionalidades voltadas a rotas.' },
-          { title: 'Documentação', description: 'Simples / Mediana.' },
-          { title: 'Última atualização', description: 'v3.10.0 (Junho de 2023).' },
-          { title: 'Possibilidade de adicionar instrumentos em coordenadas', description: 'Sim.' }
+          { title: 'Dificuldade de implementação', description: 'Baixa / Média (Estrutura e sintaxe semelhante a do leaflet puro);' },
+          { title: 'Tempo estimado', description: 'Por volta de 2-3 meses;' },
+          { title: 'Preço', description: 'Aproximadamente $200 por mês (R$968,20);' },
+          { title: 'Robustez', description: 'Possui bastante funcionalidades voltadas a rotas;' },
+          { title: 'Documentação', description: 'Simples / Mediana;' },
+          { title: 'Última atualização', description: 'v3.10.0 (Junho de 2023);' },
+          { title: 'Possibilidade de adicionar instrumentos em coordenadas', description: 'Sim;' },
+          { title: 'Licença', description: 'Trimble Maps + MapBox + glfx.js + d3-color.' }
         ]}
         observations={[
-          { description: 'TrimbleMaps + Three JS.' },
-          { description: 'Biblioteca relativamente nova.' },
-          { description: 'Baixa integração com TypeScript.' },
-          { description: 'Suporte a diferentes formatos de modelos 3D.' },
-          { description: 'Além da documentação oficial, possui pouco conteúdo na internet.' },
+          { description: 'TrimbleMaps + Three JS;' },
+          { description: 'Biblioteca relativamente nova;' },
+          { description: 'Baixa integração com TypeScript;' },
+          { description: 'Além da documentação oficial, possui pouco conteúdo na internet;' },
           { description: 'Não possui integração com outros sistemas de layers como arcgis (usado no momento) e mapbox.' },
         ]}
       />

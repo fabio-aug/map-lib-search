@@ -5,6 +5,7 @@ import Template from '@/components/Template';
 import {
   Home,
   DeckGl,
+  MapLibre,
   TrimbleMapsComponent
 } from '@/pages';
 
@@ -14,6 +15,7 @@ function Routes() {
     children: [
       { path: Paths.pHome, element: <Home /> },
       { path: Paths.pDeckGl, element: <DeckGl />},
+      { path: Paths.pMapLibre, element: <MapLibre />},
       { path: Paths.pTrimbleMaps, element: <TrimbleMapsComponent />},
       { path: '/', element: <Navigate to={Paths.pHome} />},
       { path: '*', element: <Navigate to={Paths.pHome} />}

@@ -7,6 +7,9 @@ class Paths {
 
   public pDeckGl = '/DeckGl';
   public goDeckGl = () => this.pDeckGl;
+
+  public pMapLibre = '/MapLibre';
+  public goMapLibre = () => this.pMapLibre;
 }
 
 export default new Paths();

@@ -11,6 +11,9 @@ function Home() {
       <Button type='primary' onClick={() => history((p) => p.goDeckGl).go()}>
         deck.gl
       </Button>
+      <Button type='primary' onClick={() => history((p) => p.goMapLibre).go()}>
+        MapLibre
+      </Button>
     </Space>
   );
 }
